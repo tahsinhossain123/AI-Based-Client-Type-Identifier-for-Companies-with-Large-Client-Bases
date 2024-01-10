@@ -56,3 +56,10 @@ Recognizes common person names, contributing to accurate identification of entit
 
 
 
+## Model Selection
+
+After evaluating various models, we have decided to choose the **K Nearest Neighbors (KNN) Model** for our project. The decision is based on its higher F1 and recall scores, indicating strong performance in entity classification.
+
+## Runner Up
+
+The **Gradient Boosted Descent Model** emerges as our runner-up. Despite not being the primary selection, it showcases a high level of precision. Additionally, its F1 score is within 0.9 of the KNN model, making it a noteworthy alternative.
