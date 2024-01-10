@@ -35,7 +35,6 @@ The **Gradient Boosted Descent Model** emerges as our runner-up. Despite not bei
 
 Language detection enhances adaptability across multiple languages using the "alphabet-detector" Python package.
 
-```python
 import subprocess
 import sys
 
@@ -47,7 +46,6 @@ def ad_col():
     df['langs_ad'] = df['langs_ad'].str[0]
     df['langs_ad'] = [list(e) for e in df.langs_ad]
     df['langs_ad'] = df['langs_ad'].str[0]
-python```
 
 
 #### Word Length Feature:
