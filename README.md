@@ -11,6 +11,22 @@ This project focuses on developing a machine learning model to classify entities
 - Practical application aids organizations in swiftly discerning client types, optimizing service delivery for improved client satisfaction.
 
 
+
+## Feature Engineering Highlights
+
+```python
+# Feature Engineering
+features = [
+    "Language Detector",
+    "Word Length Feature",
+    "Punctuation Feature",
+    "Contains Number Feature",
+    "Contains Company Suffix or Prefix Feature",
+    "Conjunction/Stopword Feature",
+    "Contains Location Name Feature",
+    "Contains Common Person Name Feature"
+]
+
 ## Language Detector:
 
 Robust language detection enhances adaptability across multiple languages.
