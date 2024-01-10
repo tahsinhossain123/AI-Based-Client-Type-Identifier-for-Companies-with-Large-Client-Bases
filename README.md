@@ -10,8 +10,6 @@ This project focuses on developing a machine learning model to classify entities
 - The incorporation of web scraping enriches the dataset, contributing to the model's robustness.
 - Practical application aids organizations in swiftly discerning client types, optimizing service delivery for improved client satisfaction.
 
-
-
 ## Feature Engineering Highlights
 
 ```python
@@ -59,6 +57,7 @@ Identifies location names within entities, enhancing contextual understanding.
 
 Recognizes common person names, contributing to accurate identification of entities as individuals.
 
+## Model Evaluation
 
 | Model Name            | Description                                                                                                       | Results                                                   | Pros                                              | Cons                                       |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|---------------------------------------------------|--------------------------------------------|
@@ -66,5 +65,6 @@ Recognizes common person names, contributing to accurate identification of entit
 | Logistic Regression    | Uses a sigmoid function to return the probability of a label                                                      | AUC = 89%, Precision = 79%, Recall = 91.6%, F1 Score = 84.8%   | Easy to implement, easy to update                | Sensitive to outliers, prone to overfitting  |
 | Gradient Boosted Descent | Trains simple models on the errors of previous models, each new model focuses on the weaknesses of the previous iteration | AUC = 97%, Precision = 91%, Recall = 85%, F1 Score = 88% | No data preprocessing, flexible               | Less interpretable, may lead to overfitting, requires significant space and time |
 | Random Forest          | Generates a group of decision trees and takes the majority vote to classify information                           | AUC = 96%, Precision = 89%, Recall = 83%, F1 Score = 86%  | Does not tend to overfit, adapts well to more features | Less interpretable, slow with large datasets |
+
 
 
