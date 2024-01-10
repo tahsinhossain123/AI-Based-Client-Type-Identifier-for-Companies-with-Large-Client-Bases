@@ -33,7 +33,21 @@ The **Gradient Boosted Descent Model** emerges as our runner-up. Despite not bei
 
 #### Language Detector:
 
-Robust language detection enhances adaptability across multiple languages.
+Language detection enhances adaptability across multiple languages using the "alphabet-detector" Python package.
+
+```python
+import subprocess
+import sys
+
+def ad_col():
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "alphabet-detector"])
+    from alphabet_detector import AlphabetDetector
+    ad = AlphabetDetector()
+    df['langs_ad'] = df['Entity Name'].apply(lambda x: [ad.detect_alphabet(x)])
+    df['langs_ad'] = df['langs_ad'].str[0]
+    df['langs_ad'] = [list(e) for e in df.langs_ad]
+    df['langs_ad'] = df['langs_ad'].str[0]
+
 
 #### Word Length Feature:
 
