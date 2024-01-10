@@ -47,6 +47,7 @@ def ad_col():
     df['langs_ad'] = df['langs_ad'].str[0]
     df['langs_ad'] = [list(e) for e in df.langs_ad]
     df['langs_ad'] = df['langs_ad'].str[0]
+```python
 
 
 #### Word Length Feature:
