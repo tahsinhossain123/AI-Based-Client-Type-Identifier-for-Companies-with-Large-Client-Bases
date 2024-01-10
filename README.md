@@ -12,18 +12,6 @@ This project focuses on developing a machine learning model to classify entities
 
 ## Feature Engineering Highlights
 
-```python
-# Feature Engineering
-features = [
-    "Language Detector",
-    "Word Length Feature",
-    "Punctuation Feature",
-    "Contains Number Feature",
-    "Contains Company Suffix or Prefix Feature",
-    "Conjunction/Stopword Feature",
-    "Contains Location Name Feature",
-    "Contains Common Person Name Feature"
-]
 
 ## Language Detector:
 
