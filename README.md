@@ -10,6 +10,25 @@ This project focuses on developing a machine learning model to classify entities
 - The incorporation of web scraping enriches the dataset, contributing to the model's robustness.
 - Practical application aids organizations in swiftly discerning client types, optimizing service delivery for improved client satisfaction.
 
+
+## Model Evaluation
+
+| Model Name            | Description                                                                                                       | Results                                                   | Pros                                              | Cons                                       |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|---------------------------------------------------|--------------------------------------------|
+| K-Nearest Neighbors   | Uses proximity to make classifications or predictions about the grouping of an individual data point              | AUC = 92.8%, Precision = 83.8%, Recall = 94.6%, F1 Score = 88.9% | Simple, constantly evolves                    | Can be slow with large datasets, sensitive to dimensionality |
+| Logistic Regression    | Uses a sigmoid function to return the probability of a label                                                      | AUC = 89%, Precision = 79%, Recall = 91.6%, F1 Score = 84.8%   | Easy to implement, easy to update                | Sensitive to outliers, prone to overfitting  |
+| Gradient Boosted Descent | Trains simple models on the errors of previous models, each new model focuses on the weaknesses of the previous iteration | AUC = 97%, Precision = 91%, Recall = 85%, F1 Score = 88% | No data preprocessing, flexible               | Less interpretable, may lead to overfitting, requires significant space and time |
+| Random Forest          | Generates a group of decision trees and takes the majority vote to classify information                           | AUC = 96%, Precision = 89%, Recall = 83%, F1 Score = 86%  | Does not tend to overfit, adapts well to more features | Less interpretable, slow with large datasets |
+
+
+## Model Selection
+
+After evaluating various models, we have decided to choose the **K Nearest Neighbors (KNN) Model** for our project. The decision is based on its higher F1 and recall scores, indicating strong performance in entity classification.
+
+## Runner Up
+
+The **Gradient Boosted Descent Model** emerges as our runner-up. Despite not being the primary selection, it showcases a high level of precision. Additionally, its F1 score is within 0.9 of the KNN model, making it a noteworthy alternative.
+
 ## Feature Engineering Highlights (8 new features) 
 
 #### Language Detector:
@@ -43,23 +62,3 @@ Identifies location names within entities, enhancing contextual understanding.
 #### Contains Common Person Name Feature:
 
 Recognizes common person names, contributing to accurate identification of entities as individuals.
-
-
-## Model Evaluation
-
-| Model Name            | Description                                                                                                       | Results                                                   | Pros                                              | Cons                                       |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|---------------------------------------------------|--------------------------------------------|
-| K-Nearest Neighbors   | Uses proximity to make classifications or predictions about the grouping of an individual data point              | AUC = 92.8%, Precision = 83.8%, Recall = 94.6%, F1 Score = 88.9% | Simple, constantly evolves                    | Can be slow with large datasets, sensitive to dimensionality |
-| Logistic Regression    | Uses a sigmoid function to return the probability of a label                                                      | AUC = 89%, Precision = 79%, Recall = 91.6%, F1 Score = 84.8%   | Easy to implement, easy to update                | Sensitive to outliers, prone to overfitting  |
-| Gradient Boosted Descent | Trains simple models on the errors of previous models, each new model focuses on the weaknesses of the previous iteration | AUC = 97%, Precision = 91%, Recall = 85%, F1 Score = 88% | No data preprocessing, flexible               | Less interpretable, may lead to overfitting, requires significant space and time |
-| Random Forest          | Generates a group of decision trees and takes the majority vote to classify information                           | AUC = 96%, Precision = 89%, Recall = 83%, F1 Score = 86%  | Does not tend to overfit, adapts well to more features | Less interpretable, slow with large datasets |
-
-
-
-## Model Selection
-
-After evaluating various models, we have decided to choose the **K Nearest Neighbors (KNN) Model** for our project. The decision is based on its higher F1 and recall scores, indicating strong performance in entity classification.
-
-## Runner Up
-
-The **Gradient Boosted Descent Model** emerges as our runner-up. Despite not being the primary selection, it showcases a high level of precision. Additionally, its F1 score is within 0.9 of the KNN model, making it a noteworthy alternative.
