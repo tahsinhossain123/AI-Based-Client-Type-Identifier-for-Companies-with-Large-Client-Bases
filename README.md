@@ -13,35 +13,35 @@ This project focuses on developing a machine learning model to classify entities
 ## Feature Engineering Highlights
 
 
-## Language Detector:
+### Language Detector:
 
 Robust language detection enhances adaptability across multiple languages.
 
-## Word Length Feature:
+### Word Length Feature:
 
 Captures word length, aiding in discerning patterns indicative of entity type.
 
-## Punctuation Feature:
+### Punctuation Feature:
 
 Analyzes and leverages punctuation marks, enhancing entity classification accuracy.
 
-## Contains Number Feature:
+### Contains Number Feature:
 
 Identifies the presence of numbers within entities, aiding in distinguishing between individual and company names.
 
-## Contains Company Suffix or Prefix Feature:
+### Contains Company Suffix or Prefix Feature:
 
 Detects common company suffixes or prefixes, contributing to precision in identifying entities as companies.
 
-## Conjunction/Stopword Feature:
+### Conjunction/Stopword Feature:
 
 Focuses on conjunctions and stopwords, refining the model's understanding of language structures.
 
-## Contains Location Name Feature:
+### Contains Location Name Feature:
 
 Identifies location names within entities, enhancing contextual understanding.
 
-## Contains Common Person Name Feature:
+### Contains Common Person Name Feature:
 
 Recognizes common person names, contributing to accurate identification of entities as individuals.
 
