@@ -25,9 +25,36 @@ features = [
     "Contains Common Person Name Feature"
 ]
 
-# Highlighting the significance of each feature
-for feature in features:
-    print(f"{feature}:")
-    print(" - " + "Enhances adaptability across multiple languages." if "Language" in feature else "Captures word length, aiding in discerning patterns indicative of entity type." if "Word Length" in feature else "Analyzes and leverages punctuation marks, enhancing entity classification accuracy." if "Punctuation" in feature else "Identifies the presence of numbers within entities, aiding in distinguishing between individual and company names." if "Contains Number" in feature else "Detects common company suffixes or prefixes, contributing to precision in identifying entities as companies." if "Company Suffix" in feature else "Focuses on conjunctions and stopwords, refining the model's understanding of language structures." if "Conjunction" in feature else "Identifies location names within entities, enhancing contextual understanding." if "Location Name" in feature else "Recognizes common person names, contributing to accurate identification of entities as individuals.")
-    print()
+## Language Detector:
+
+Robust language detection enhances adaptability across multiple languages.
+
+## Word Length Feature:
+
+Captures word length, aiding in discerning patterns indicative of entity type.
+
+## Punctuation Feature:
+
+Analyzes and leverages punctuation marks, enhancing entity classification accuracy.
+
+## Contains Number Feature:
+
+Identifies the presence of numbers within entities, aiding in distinguishing between individual and company names.
+
+## Contains Company Suffix or Prefix Feature:
+
+Detects common company suffixes or prefixes, contributing to precision in identifying entities as companies.
+
+## Conjunction/Stopword Feature:
+
+Focuses on conjunctions and stopwords, refining the model's understanding of language structures.
+
+## Contains Location Name Feature:
+
+Identifies location names within entities, enhancing contextual understanding.
+
+## Contains Common Person Name Feature:
+
+Recognizes common person names, contributing to accurate identification of entities as individuals.
+
 
