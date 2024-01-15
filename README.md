@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project focuses on developing a machine learning model to classify entities within a dataset of 10,000 entries, distinguishing between individuals and companies. Tailored for third-party companies with extensive client bases, the project strategically employs web scraping techniques to enhance data collection and model training. Leveraging Python and popular libraries such as TensorFlow and scikit-learn, a highly accurate machine learning model is engineered.
+This project focuses on developing a machine learning model to classify entities within a dataset of 10,000 entries, distinguishing between individuals and companies. Tailored for third-party companies with extensive client bases, the project strategically employs web scraping techniques to enhance data collection and model training. It usees Python and popular libraries such as TensorFlow and scikit-learn.
 
 ### Key Achievements
 
